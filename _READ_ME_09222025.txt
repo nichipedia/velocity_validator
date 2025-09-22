@@ -1,0 +1,19 @@
+There are two scripts. One merges holes together to the site, the other just treats holes independently.
+
+CAVEAT: The datasets you all have received are "cleaned" in terms of established column names (e.g., original data sets use different unique naming conventions for depth/velocity, etc - the datasets you have this is already taken care of). These codes utilize messier non standardized datasets and several steps of preprocessing had to occur for me to use them. You should not need all aspects of this code base. 
+
+NOTE (probably goes without saying but will say anyway): Please do not share the cleaned versions of these data with anybody (unless ok'ing with Taylor/Annie), I'm ok with you all working with them but not ready to share with the broader scientific community yet unless citation occurs (we spent substantial effort curating and cleaning these datasets) :) This dataset represents one of the only opportunities to do "big data" in the field of geology. 
+
+There are several repositories linked to the below websites, which are ultimately where this data came from (although A LOT cleaning/data mining, etc occurred for us to get the full comprehensive datasets, see NOTE) Feel free to poke around (and try not to get overwhelmed, lol) 
+
+General information on datasets: 
+http://deepseadrilling.org/about.htm (info on individual Legs - http://deepseadrilling.org/i_reports.htm)
+http://www.odplegacy.org/  (info on individual legs - http://www.odplegacy.org/science_results/leg_summaries.html)
+https://www.iodp.org/ (https://publications.iodp.org/index.html)
+http://odplegacy.org/PDF/Data/Documentation/ODP_Data.pdf  - SEE PAGE 11 for GENERAL overview of P-wave velocity)
+http://www-odp.tamu.edu/publications/tnotes/tn37/TNOTE_37.PDF 
+
+
+Specific information on dataset type (e.g., CARB, NGR, GRA) collection, etc is available, just let me know if you need it. Keep in mind this data has been collected over DECADES and instruments change, most of those changes occur at the boundaries start/end of the programs (DSDP, ODP, IODP).
+
+I realize this is a messy dataset that requires abundant domain knowledge, feel free to reach out (this dataset and other similar are literally my career, and I live to try to make sense of "big data" in geology)
