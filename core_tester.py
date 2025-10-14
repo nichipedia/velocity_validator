@@ -13,7 +13,8 @@ site1606['compressional_velocity(m/s)'] = site1606['compressional_velocity(m/s)'
 # Uncomment the below if you want to chop off some of the really bad data. Sort of a heuristic.
 #site1606 = site1606[site1606['compressional_velocity(m/s)'] < 9000]
 
-
+# I am still trying to understand the organization of the data, from what I can tell, the data is organized like leg/site/hole/core/section
+# Site seems to be the easiest unique identifier. There are only unique sites in each leg from what I can see.
 for hole in site1606['hole'].unique():
     core_hole = site1606[site1606['hole'] == hole].copy()
     for core_id in core_hole['core'].unique():
