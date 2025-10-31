@@ -1,13 +1,13 @@
-
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.neighbors import KNeighborsClassifier
 
 df = pd.read_csv('/Users/nmoran/Downloads/ForNick/DATA/PWAVE_LOGGER.csv', low_memory=False)
 
 
-
+# Vectorize on the dataframe...
 for site_id in df['site'].unique():
     site = df[df['site'] == site_id].copy()
     site['compressional_velocity(m/s)'] = site['compressional_velocity(m/s)'].astype(float)
@@ -42,5 +42,18 @@ for site_id in df['site'].unique():
         "Max": max_vals,
         "Inlier Fraction": inliers
     })
+    #knn = KNeighborsClassifier(n_neighbors=10)
+    #knn.fit([pf['Mean'], pf['Standard Deviation']])
+    #x_min, x_max = df["Mean"].min() - 1, df['Mean'].max() + 1
+    #y_min, y_max = df['Standard Deviation'].min() - 1, df['Standard Deviation'].max() + 1
+    #xx, yy = np.meshgrid(np.linspace(x_min, x_max, 300),
+    #                     np.linspace(y_min, y_max, 300))
+
+# 4️⃣ Predict KNN classification over the grid
+    #Z = knn.predict(np.c_[xx.ravel(), yy.ravel()])
+    #Z = Z.reshape(xx.shape)
+    #plt.contourf(xx, yy, Z, alpha=0.3, cmap="coolwarm")
+
+
     sns.pairplot(pf, diag_kind="hist", corner=False)
     plt.show()
